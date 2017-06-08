@@ -13,6 +13,7 @@ const Input = ({ label, value, onChangeText, placeholder, secureTextEntry }) => 
         autoCorrect={false}
         style={inputStyle}
         value={value}
+        multiline={true}
         onChangeText={onChangeText}
 
       />
@@ -22,23 +23,27 @@ const Input = ({ label, value, onChangeText, placeholder, secureTextEntry }) => 
 
 const styles = {
   inputStyle: {
-    color: '#000',
+    //color: '#000',
     paddingRight: 5,
     paddingLeft: 5,
     fontSize: 18,
-    lineHeight: 23,
-    flex: 2
+    lineHeight: 100,
+    flex: 2,
+
   },
-  labelStyle: {
-    fontSize: 18,
-    paddingLeft: 20,
-    flex: 1
-  },
+  // labelStyle: {
+  //   fontSize: 18,
+  //   paddingLeft: 20,
+  //   flex: 1,
+  //   backgroundColor: 'blue'
+  // },
   containerStyle: {
-    height: 40,
+    height: 100,
     flex: 1,
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
+     opacity: 0.5,
+
   }
 };
 

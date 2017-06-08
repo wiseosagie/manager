@@ -47,7 +47,7 @@ class EmployeeList extends Component {
       const searched = _.filter(this.props.employees, (employee) => {
         console.log(employee.name.toLowerCase().indexOf(term.toLowerCase()));
         //const good = employee.name && employee.phone
-        return employee.name.toLowerCase().indexOf(term.toLowerCase()) && employee.phone.toLowerCase().indexOf(term.toLowerCase()) !== -1;
+        return employee.name.toLowerCase().indexOf(term.toLowerCase()) !== -1;
 
       })
       //console.log(searched);

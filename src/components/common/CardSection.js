@@ -1,10 +1,11 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Image } from 'react-native';
 
 const CardSection = (props) => {
   return (
     <View style={[styles.containerStyle, props.style]}>
       {props.children}
+
     </View>
   );
 };
@@ -13,12 +14,15 @@ const styles = {
   containerStyle: {
     borderBottomWidth: 1,
     padding: 5,
-    backgroundColor: '#fff',
+    //backgroundColor: '#fff',
+    backgroundColor: 'transparent',
     justifyContent: 'flex-start',
     flexDirection: 'row',
     borderColor: '#ddd',
-    position: 'relative'
+    position: 'relative',
+    // opacity: 0.5
   }
 };
 
 export {CardSection};
+//<Image source={require('../images/medii.png')}>
