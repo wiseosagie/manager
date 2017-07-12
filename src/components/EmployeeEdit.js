@@ -22,11 +22,7 @@ class EmployeeEdit extends Component {
     return (
       <Card>
         <EmployeeForm />
-        <CardSection>
-          <Button onPress={this.onButtonPress.bind(this)}>
-            Save Changes
-          </Button>
-        </CardSection>
+
       </Card>
     );
   }
@@ -40,3 +36,9 @@ const mapStateToProps = (state) => {
 export default connect(mapStateToProps, {
   employeeUpdate, employeeSave
 }) (EmployeeEdit);
+
+// <CardSection>
+//   <Button onPress={this.onButtonPress.bind(this)}>
+//     Save Changes
+//   </Button>
+// </CardSection>

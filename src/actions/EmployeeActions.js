@@ -28,10 +28,10 @@ return (dispatch) => {
 };
 
 export const  employeesFetch = () => {
-  //const { currentUser } =firebase.auth();
+  const { currentUser } =firebase.auth();
 
   return (dispatch) => {
-    firebase.database().ref(`/users/5oQquBsC4BMujF7AEUG1ElLFMJh1/employees`)
+    firebase.database().ref(`/users/${currentUser.uid}/employees`)
       .on('value', snapshot => {
         dispatch({ type: EMPLOYEES_FETCH_SUCCESS, payload:snapshot.val() });
       });

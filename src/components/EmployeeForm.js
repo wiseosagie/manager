@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Picker } from 'react-native';
+import { View, Text, Image } from 'react-native';
 import { connect } from 'react-redux';
 import { employeeUpdate } from '../actions';
 import { CardSection, Input } from './common';
@@ -7,6 +7,7 @@ import { CardSection, Input } from './common';
 class EmployeeForm extends Component {
   render() {
     return (
+
       <View>
       <CardSection style={styles.headerStyle}>
         <Text style={styles.textStyle}>Name</Text>
@@ -35,10 +36,10 @@ class EmployeeForm extends Component {
           />
         </CardSection>
 
+        </View>
 
 
 
-      </View>
     );
   }
 }

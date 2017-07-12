@@ -26,7 +26,7 @@ const styles = {
     //color: '#000',
     paddingRight: 5,
     paddingLeft: 5,
-    fontSize: 18,
+    fontSize: 12,
     lineHeight: 100,
     flex: 2,
 
